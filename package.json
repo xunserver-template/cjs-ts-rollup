@@ -1,0 +1,53 @@
+{
+  "name": "cli-ts-rollup",
+  "version": "0.0.1",
+  "description": "基于ts和rollup的cli模版",
+  "main": "dist/index.js",
+  "bin": {
+    "xs": "dist/index.js",
+    "xs-dev": "src/index.js"
+  },
+  "keywords": [
+    "cli",
+    "commander"
+  ],
+  "author": "",
+  "license": "ISC",
+  "overrides": {
+    "graceful-fs": "^4.2.10"
+  },
+  "dependencies": {
+    "chalk": "5.0.1",
+    "commander": "9.4.0",
+    "cross-spawn": "7.0.3",
+    "fs-extra": "^10.1.0",
+    "inquirer": "9.1.0",
+    "shelljs": "^0.8.5"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-json": "4.1.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "8.3.4",
+    "@types/chalk": "2.2.0",
+    "@types/commander": "2.12.2",
+    "@types/cross-spawn": "6.0.2",
+    "@types/fs-extra": "^9.0.13",
+    "@types/inquirer": "9.0.0",
+    "@types/shelljs": "^0.8.11",
+    "@xunserver/commitlint-config": "^0.0.2",
+    "@xunserver/eslint-config": "^0.0.5",
+    "@xunserver/prettier-config": "^0.0.2",
+    "esbuild": "^0.15.1",
+    "esbuild-register": "^3.3.3",
+    "rollup": "2.77.2",
+    "ts-node": "^10.9.1"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup -c"
+  }
+}
